@@ -1,0 +1,19 @@
+<view class='index'>
+  <view class="indexImg">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="indexName"></open-data>
+</view>
+<view class="body">
+  <view class='btn'>
+    <i-button bind:click="startSell" type="ghost" long="true" ><image src='../../images/book.png' class='icon'></image><text class='info'>开始卖书</text><image src='../../images/right.png' class='arrow'></image> </i-button>
+  </view>
+  <view class='btn'>
+    <i-button bind:click="handleClick" type="ghost" long="true"><image src='../../images/sell.png' class='icon'/><text class='info'>正在售卖</text><image src='../../images/right.png' class='arrow'></image></i-button>
+    
+  </view>
+  <view class='btn'>
+    <i-button  open-type='feedback' type="ghost"  long="true"><image src='../../images/feedBack.png' class='icon'/><text class='info'>问题反馈</text> <image src='../../images/right.png' class='arrow'></image></i-button>
+   
+  </view>
+</view>

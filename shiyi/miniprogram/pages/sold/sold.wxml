@@ -1,0 +1,13 @@
+<!--pages/sold/sold.wxml-->
+<view  wx:for="{{myBookList2}}" wx:key="{{index}}" >
+  <view class='books'>
+    <image src="{{item.image}}"></image>
+    <view class='info'>
+        <view class='title'>{{item.name}}</view>
+        <view class='desc'>联系方式：<text class='number'>{{item.contact}}</text></view>
+        <view class='price'>￥：<text>{{item.price}}</text>元</view>
+        <button size='mini' type='primary' class="btn" bindtap="delete" data-id="{{item._id}}">确认卖出</button>
+    </view>
+  </view>
+</view>
+

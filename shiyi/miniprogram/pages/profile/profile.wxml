@@ -1,0 +1,30 @@
+<!--pages/profile/profile.wxml-->
+<!-- 轮播图 -->
+ <view class='headerSwiper'>
+  <swiper 
+    indicator-dots='true'
+    indicator-color='#333' 
+    indicator-active-color='#f30' 
+    autoplay='true'
+    circular="{{circular}}" 
+    interval="{{interval}}"
+    duration="{{duration}}"
+  >
+    <view wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </view>
+  </swiper>
+</view>
+<!-- 轮播图 -->
+
+
+
+<!-- 图书信息 -->
+<block wx:for="{{bookList2}}" wx:key="{{index}}" >
+    <i-card title="{{item.name}}" extra="￥：{{item.price}}元" thumb="{{item.image}}">
+        <view slot="content">联系方式：{{item.contact}}</view>
+        <view slot="footer">备注：{{item.remark}}</view>
+    </i-card>
+</block>

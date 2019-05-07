@@ -1,0 +1,33 @@
+/* pages/sold/sold.wxss */
+.books{
+  width: 90vw;
+  background: #fafafa;
+  height: 240rpx;
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  border-radius:20rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx #ccc;
+}
+.books image{
+  width: 200rpx;
+  height: 200rpx;
+  margin:20rpx 0 0 15rpx;
+}
+.info{
+  flex: 1;
+  margin-left: 30rpx;
+}
+.price{
+  color: red
+}
+.desc,.remark,.price{
+  font-size:30rpx;
+  margin-top: 30rpx; 
+}
+.title{
+  margin-top: 10rpx;
+}
+.btn{
+  transform: translate(220rpx,-50rpx)
+}

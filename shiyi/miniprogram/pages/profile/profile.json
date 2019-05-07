@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "i-card": "../../component/dist/card/index",
+      "van-search": "../../component/vant/search/index"
+  }
+}
